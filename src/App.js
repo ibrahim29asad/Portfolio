@@ -7,37 +7,9 @@ import { LinearGradient } from 'react-text-gradients';
 import Home from './Home';
 import AboutMe from './AboutMe';
 import SkillSetTools from './SkillSetTools';
-
-//Skills
-import { SiCplusplus } from "react-icons/si"; // C++
-import { SiC } from "react-icons/si"; // C
-import { SiSwift } from "react-icons/si"; //Swift
-import { FaJava } from "react-icons/fa6"; // Java
-import { SiPython } from "react-icons/si"; // Python
-import { FaSquareGit } from "react-icons/fa6"; // Git
-import { SiJavascript } from "react-icons/si"; // JavaScript
-import { FaReact } from "react-icons/fa"; // React maybe rotate it 
-import { SiCsswizardry } from "react-icons/si"; // CSS
-import { FaHtml5 } from "react-icons/fa"; // HTML
-import { SiAssemblyscript } from "react-icons/si"; // Assembly
-import { SiYaml } from "react-icons/si"; // YAML
-import { SiAzurepipelines } from "react-icons/si"; // Pipeline
-import { FaDocker } from "react-icons/fa6"; // Docker
-import { PiFileSqlDuotone } from "react-icons/pi"; // NoSQL
-import { SiMysql } from "react-icons/si"; // MySQL
-import { BiLogoFlask } from "react-icons/bi"; // Flask
-import { VscAzureDevops } from "react-icons/vsc"; // Azure Devops
-import { PiLinuxLogoFill } from "react-icons/pi"; // Linux
-import { FaWindows } from "react-icons/fa6"; // Windows
-
-
-import { FaSquareGithub } from "react-icons/fa6"; // Git Hub
-import { TbBrandVscode } from "react-icons/tb"; // VS Code
-import { RiMacbookLine } from "react-icons/ri"; // Macbook Pro
-import { PiDeviceTabletCameraDuotone } from "react-icons/pi"; // IPad
-import { TbDeviceAirpodsCase } from "react-icons/tb"; // AirPods Pro
-import { SiJupyter } from "react-icons/si"; // Jupyter Notebook
-
+import Socials from './Socials';
+import ImageGallery from './ImageGallery';
+import GitHubCalendar from 'react-github-calendar';
 
 function App() {
 
@@ -64,9 +36,34 @@ function App() {
 
     <section id="Skills">
     <SkillSetTools/>
+    </section>
 
+    <section id="Social">
+    <Socials/>
+    </section>
+
+    <section id="Posts">
+  <div className='Posts-Text-header'>
+    Posts: <br/> Photo Gallery:
+  </div>
+  <ImageGallery/>
+  <div className='Posts-Text-header'>
+    GitHub Contributions:
+  </div>
+  <div className='GitHub'>
+    <GitHubCalendar username="ibrahim29asad" />
+
+    </div>
 
     </section>
+
+  
+    
+
+    <div className = "About-Text">
+    <p>&nbsp;ibrahim asad, 2024 <br/>&nbsp;version 3, updated Feb 2024</p>  
+    </div>
+   
     
     </div>
 

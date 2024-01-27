@@ -33,7 +33,10 @@
 }
 
 .Header-Style{
-  background-color: hsl(273, 32%, 33%);
+  
+  background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 30%, #FFCC70 66%, #ffffff 100%);
+
   height: 60px;
   position: fixed;
   z-index: 1;
@@ -59,21 +62,14 @@
   font-family: sans-serif;
   font-size:medium;
   font-weight: 900;
+  background-color: transparent;
+  border: none;
 
-  text-decoration: none;
-  cursor: pointer;
-  border-left: black;
-  border-right: black;
-  border-top: none;
-  border-bottom: none;
-  
-  background-color: hsl(273, 32%, 33%);
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 /* Hover effect */
 .button:hover {
-  background-color: hsl(273, 66%, 66%);
+  
   color: #ffffff;
   border-color: #ffffff;
   border-radius: 5px;
@@ -220,7 +216,9 @@ Aspect ratio = 1986 / 3520 ≈ 0.5642 */
 
 
 .Skill{  
-  background-color: #c4c4c4;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 43%, #C850C0 67%, #FFCC70 90%, #ffffff 99%);
+
   color: #ffffff;
   border-radius: 5%;
   padding:10px;
@@ -233,7 +231,9 @@ Aspect ratio = 1986 / 3520 ≈ 0.5642 */
 }
 
 .Skill:hover {
-  background-color:#f2f2f2;
+  background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 52%, #FFCC70 88%, #ffffff 99%);
+
   color: black;
   border-color: #ffffff;
   border-radius: 5px;
@@ -249,7 +249,8 @@ Aspect ratio = 1986 / 3520 ≈ 0.5642 */
 }
 
 .Tool{  
-  background-color: #c4c4c4;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 43%, #C850C0 67%, #FFCC70 90%, #ffffff 99%);
   color: #ffffff;
   border-radius: 5%;
   padding:10px;
@@ -262,11 +263,165 @@ Aspect ratio = 1986 / 3520 ≈ 0.5642 */
 }
 
 .Tool:hover {
-  background-color:#f2f2f2;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 52%, #FFCC70 88%, #ffffff 99%);
   color: black;
   border-color: #ffffff;
   border-radius: 5px;
   height: 65%;
+}
+
+
+
+.Social-Text-header{
+  font-family: sans-serif;
+  font-size:xx-large;
+  font-weight: 900;
+  color: white;
+  
+  text-align: left;
+  padding-top: 3%;
+  padding-left: 20%;
+  
+}
+
+.SocialHeader-Style{
+  background-color: hsl(273, 32%, 33%);
+  
+  
+  height: 70px;
+  
+  width: 60%;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 30%, #FFCC70 66%, #ffffff 100%);
+  
+  /* margin: 1%;
+  padding-left: 9%;
+  padding-top: 2%;
+
+  padding-right: 1%; */
+  font-family: sans-serif;
+  font-size:x-large;
+  font-weight: 900;
+  border-radius: 4px;
+  margin: 1%;
+  margin: 20px auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+
+.Socialbutton {
+  display: inline-block;
+  padding: 0px 10px;
+  font-family: sans-serif;
+  font-size:medium;
+  font-weight: 900;
+
+  text-decoration: none;
+  cursor: pointer;
+  border-left: black;
+  border-right: black;
+  border-top: none;
+  border-bottom: none;
+  
+  background-color: hsl(273, 32%, 33%);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Hover effect */
+.Socialbutton:hover {
+  background-color: hsl(273, 66%, 66%);
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* App.css - Your custom styling for the slideshow */
+
+.Posts-Text-header{
+  font-family: sans-serif;
+  font-size:xx-large;
+  font-weight: 900;
+  color: white;
+  
+  text-align: left;
+  padding-top: 3%;
+  padding-left: 20%;
+  
+}
+
+/*For Images*/
+/* ImageGallery.css */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 65%;
+  background-color: black;
+  margin: 1%;
+  margin: 20px auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  position: relative;
+  width: calc(13.33% - 10px); /* 3 items per row with 10px margin on each side */
+  margin: 0 5px 10px 5px; /* Adjust the margin as needed */
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.gallery-item .overlay p {
+  color: #fff; /* Adjust the text color as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  text-align: center;
+  margin: 0;
+}
+
+.GitHub{
+  height: 200px;
+  border-radius: 7px;
+  width: 60%;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 30%, #FFCC70 66%, #ffffff 100%);
+
+  margin: 1%;
+  margin: 30px auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  colorScheme: light;
+
 }
 
 
