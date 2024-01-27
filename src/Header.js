@@ -10,40 +10,48 @@ import { MdInsertPhoto } from "react-icons/md"; // postss
 
 const Header = () => {
 
-    
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
     return (
     <header>
 
 
-  <button class="button" >    
-  
-  
+  <button class="button" onClick={() => scrollToSection('Home')}>      
   <LinearGradient gradient={['to right', '#0acdf0 ,#ffffff']} >
   <BiHome/>
     Home
   </LinearGradient>
   </button>
+
     |
-  <button class="button" >    
+    <button class="button" onClick={() => scrollToSection('About')}>   
   <IoMdPerson/>
   <LinearGradient gradient={['to right', '#0acdf0 ,#ffffff']}>
     About
   </LinearGradient>
   </button>
     |
-  <button class="button" >    
+    <button class="button" onClick={() => scrollToSection('Skills')}> 
   <FaMicrochip/>
   <LinearGradient gradient={['to right', '#0acdf0 ,#ffffff']}>
     Skills
   </LinearGradient>
   </button>
     |
+  
+
   <button class="button" >    
   <IoMdPaper/>
   <LinearGradient gradient={['to right', '#0acdf0 ,#ffffff']}>
     Resume
   </LinearGradient>
   </button>
+
+
     |
   <button class="button" >    
   <IoShareSocialSharp/>

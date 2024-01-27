@@ -2,14 +2,45 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import background from "../src/images/back.jpg";
-import ProfilePic from "../src/images/profile.jpg"
 import { LinearGradient } from 'react-text-gradients';
-import Typewriter from "typewriter-effect";
-import Rahat from "./images/rahat.jpg";
 
+import Home from './Home';
+import AboutMe from './AboutMe';
+import SkillSetTools from './SkillSetTools';
+
+//Skills
+import { SiCplusplus } from "react-icons/si"; // C++
+import { SiC } from "react-icons/si"; // C
+import { SiSwift } from "react-icons/si"; //Swift
+import { FaJava } from "react-icons/fa6"; // Java
+import { SiPython } from "react-icons/si"; // Python
+import { FaSquareGit } from "react-icons/fa6"; // Git
+import { SiJavascript } from "react-icons/si"; // JavaScript
+import { FaReact } from "react-icons/fa"; // React maybe rotate it 
+import { SiCsswizardry } from "react-icons/si"; // CSS
+import { FaHtml5 } from "react-icons/fa"; // HTML
+import { SiAssemblyscript } from "react-icons/si"; // Assembly
+import { SiYaml } from "react-icons/si"; // YAML
+import { SiAzurepipelines } from "react-icons/si"; // Pipeline
+import { FaDocker } from "react-icons/fa6"; // Docker
+import { PiFileSqlDuotone } from "react-icons/pi"; // NoSQL
+import { SiMysql } from "react-icons/si"; // MySQL
+import { BiLogoFlask } from "react-icons/bi"; // Flask
+import { VscAzureDevops } from "react-icons/vsc"; // Azure Devops
+import { PiLinuxLogoFill } from "react-icons/pi"; // Linux
+import { FaWindows } from "react-icons/fa6"; // Windows
+
+
+import { FaSquareGithub } from "react-icons/fa6"; // Git Hub
+import { TbBrandVscode } from "react-icons/tb"; // VS Code
+import { RiMacbookLine } from "react-icons/ri"; // Macbook Pro
+import { PiDeviceTabletCameraDuotone } from "react-icons/pi"; // IPad
+import { TbDeviceAirpodsCase } from "react-icons/tb"; // AirPods Pro
+import { SiJupyter } from "react-icons/si"; // Jupyter Notebook
 
 
 function App() {
+
   return (
 
     
@@ -18,46 +49,32 @@ function App() {
     backgroundRepeat: "no-repeat",
     
     }}>
-<div className='Header-Style'>
-    <Header/>  
+
+    <div className='Header-Style'>
+      <Header/>  
     </div> 
 
-  <div className='Home-Text'>
-    Hey There ! &nbsp;
-    <div className='wave'>
-    😁 
+    <section id="Home">
+      <Home />
+    </section>
+
+    <section id="About">
+      <AboutMe/>
+    </section>
+
+    <section id="Skills">
+    <SkillSetTools/>
+
+
+    </section>
+    
     </div>
-    <div className='wave'>
-      👋   
-    </div>
-    <br/>
-      I'm&nbsp;
-    <LinearGradient gradient={['to right', '#0acdf0 ,#ffffff']} >
-      Rahat
-    </LinearGradient>
-   
-<div className='typewriter-text'>
-    <Typewriter
-  options={{
-    strings: ['5th Year Student', 'Software Developer', 'Aspiring Software Engineer' ],
-    autoStart: true,
-    loop: true,
-  }}
-  style={{ color: '#0acdf0' }}  // Change 'blue' to the desired color
-/>
-</div>
 
-<img src={ProfilePic} className="Profile-Pic" alt="Profile" />
-   
+    
 
-       
-  
-  </div>
+ 
 
 
-
-    </div>
-   
   );
 }
 
