@@ -16,11 +16,11 @@ function App() {
   return (
 
     
-    <div className="App" style={{ backgroundImage: `url(${background})`
-    , backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    
-    }}>
+<div className="App" style={{
+  backgroundImage: `url(${background})`,
+  backgroundSize: "contain",
+  backgroundRepeat: "repeat",
+}}>
 
     <div className='Header-Style'>
       <Header/>  
@@ -49,6 +49,9 @@ function App() {
   <ImageGallery/>
   <div className='Posts-Text-header'>
     GitHub Contributions:
+  </div>
+  <div className='Posts-Text'>
+    (Theres more but most of the Repos are Private 🙇‍♂️)
   </div>
   <div className='GitHub'>
     <GitHubCalendar username="ibrahim29asad" />
