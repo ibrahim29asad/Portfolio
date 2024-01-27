@@ -36,7 +36,7 @@ const SkillSetTools = () => {
     
     return (
 
-      <><div className='Skills-Text-header'>
+      <><div className='Skills-Text-header-main'>
         Skill Sets and Tools:
       </div><p></p><div className='Skills-Text-header'>
           Skills:

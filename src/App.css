@@ -3,6 +3,7 @@
   height: 100%; 
   width: 100%; 
   margin:auto;     
+  background-color: black;
 }
 
 
@@ -37,11 +38,12 @@
   background-color: #4158D0;
 background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 30%, #FFCC70 66%, #ffffff 100%);
 
+  
   height: 60px;
+  min-height: calc(10px + 2vmin);
   position: fixed;
   z-index: 1;
   width: 94%;
-
   margin: 1%;
   padding-left: 2%;
   padding-top: 2%;
@@ -75,40 +77,37 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 30%, #FFCC70 66%, #
   border-radius: 5px;
 }
 
+.Home{
+  transform: scale(1, 1);
+}
+
 
 .Profile-Pic {
-  border-radius: 50%;  /*curved corners */
-  min-width:100px ;
-  min-height: 100px;
-  width: 40vmin; 
-  height: 40vmin; 
-  object-fit: cover; 
+  border-radius: 50%;
+  width: 20vw; /* Set a base width in viewport width units */
+  height: 20vw; /* Set a base height in viewport width units */
+  min-width: 100px; /* Set a minimum width for smaller screens */
+  min-height: 100px; /* Set a minimum height for smaller screens */
+  object-fit: cover;
   object-position: top left;
-  display: flex;   
-  flex-wrap: wrap;
-  align-items: flex;
   z-index: 100;
 }
+
+
 .Home-image{
-
-  padding-left: 50%;
-  
+ padding-top: calc(60px + 10%); 
 }
-
 
 .Home-Text{
   font-family: sans-serif;
   font-size:x-large;
+  font-size: 2.5vw;
   font-weight: 900;
   color: white;
-  padding-top: 25%;
-  text-align: left;
-  padding-left: 20%;
-  
+  text-align:left;
+  padding-left: 40%;
+
 }
-
-
-
 
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -134,13 +133,11 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 30%, #FFCC70 66%, #
   text-shadow: 2px 2px  blue;
 }
 
-
-
-
 .About-Text-header{
   font-family: sans-serif;
   font-size:xx-large;
   font-weight: 900;
+  font-size: 2.7vw;
   color: white;
   padding-top: 20%;
   text-align: left;
@@ -155,20 +152,19 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 30%, #FFCC70 66%, #
   color: white;
   text-align: left;
   padding-top: 1%;
- 
+  font-size: 1.5vw;
   max-width: 45%;
   word-wrap: break-word;
   
   
 }
-
 /* Aspect ratio = Width / Height
 Aspect ratio = 1986 / 3520 ≈ 0.5642 */
 .About-Pic {
   border-radius: 2%;
   border: 5px solid #555;
-  width: 38vmin; 
-  height: 60vmin; 
+  width: 19vw; 
+  height: 30vw; 
   object-fit: cover; 
   object-position: top left;
   display: flex;   
@@ -177,8 +173,25 @@ Aspect ratio = 1986 / 3520 ≈ 0.5642 */
   
 }
 .About-image{
-
   padding-left: 60%;
+}
+
+
+
+
+
+
+
+
+.Skills-Text-header-main{
+  font-family: sans-serif;
+  font-size:xx-large;
+  font-weight: 900;
+  color: white;
+  font-size: 2.7vw;
+  text-align: left;
+  padding-left: 20%;
+  padding-top: 10%;
   
 }
 
@@ -187,18 +200,21 @@ Aspect ratio = 1986 / 3520 ≈ 0.5642 */
   font-size:xx-large;
   font-weight: 900;
   color: white;
-  
+  font-size: 2.7vw;
   text-align: left;
   padding-left: 20%;
+  padding-top: 1%;
+
   
 }
+
 
 .Skills-Text{
   font-family: sans-serif;
   font-size:xx-large;
   font-weight: 900;
   color: white;
-  
+  font-size: 2.7vw;
   text-align: left;
   padding-left: 20%;
   
@@ -222,8 +238,7 @@ Aspect ratio = 1986 / 3520 ≈ 0.5642 */
   color: #ffffff;
   border-radius: 5%;
   padding:10px;
-  font-size: 15px;
-
+  font-size: 1.1vw;
   bottom: 0;
   transition: 0.3s;
   height: 60%;
@@ -233,7 +248,7 @@ Aspect ratio = 1986 / 3520 ≈ 0.5642 */
 .Skill:hover {
   background-color: #4158D0;
 background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 52%, #FFCC70 88%, #ffffff 99%);
-
+font-size: 1.1vw;
   color: black;
   border-color: #ffffff;
   border-radius: 5px;
@@ -243,9 +258,10 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 52%, #FFCC70 88%, #
 
 .Tools-Grid{
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
   width: 60%; /* Adjust the width value as needed */
   margin: 0 auto; /* Center the grid container if necessary */
+  
 }
 
 .Tool{  
@@ -254,12 +270,11 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 52%, #FFCC70 88%, #
   color: #ffffff;
   border-radius: 5%;
   padding:10px;
-  font-size: 15px;
-
+  font-size: 1.1vw;
   bottom: 0;
   transition: 0.3s;
   height: 60%;
-  width: 81%;
+  width: 21%;
 }
 
 .Tool:hover {
@@ -268,8 +283,17 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 52%, #FFCC70 88%, #
   color: black;
   border-color: #ffffff;
   border-radius: 5px;
+  font-size: 1.1vw;
   height: 65%;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -403,7 +427,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 52%, #FFCC70 88%, #
 
 .gallery-item .overlay p {
   color: #fff; /* Adjust the text color as needed */
-  font-size: 16px; /* Adjust the font size as needed */
+  font-size: 1.1vw; /* Adjust the font size as needed */
   text-align: center;
   margin: 0;
 }
@@ -434,3 +458,27 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 52%, #FFCC70 88%, #
     transform: rotate(360deg);
   }
 }
+
+
+
+.Tools-Grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  width: 60%; /* Adjust the width value as needed */
+  margin: 0 auto; /* Center the grid container if necessary */
+}
+
+.Tool{  
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 43%, #C850C0 67%, #FFCC70 90%, #ffffff 99%);
+  color: #ffffff;
+  border-radius: 5%;
+  padding:10px;
+  font-size: 15px;
+
+  bottom: 0;
+  transition: 0.3s;
+  height: 60%;
+  width: 81%;
+}
+

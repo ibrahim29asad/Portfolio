@@ -13,6 +13,11 @@ const Home = () => {
 
       <div className='Home'>
 
+
+    <div className='Home-image' >
+  <img src={ProfilePic} className="Profile-Pic" alt="Profile" /> 
+</div>
+
     <div className='Home-Text'>
       Hey There ! &nbsp;
       <div className='wave'>
@@ -24,11 +29,13 @@ const Home = () => {
         Ibrahim
         
       </LinearGradient>
-      
+{/*       
+      '5th Year Student', 'Software Developer', */}
+
   <div className='typewriter-text'>
       <Typewriter
     options={{
-      strings: ['5th Year Student', 'Software Developer', 'Aspiring Software Engineer' ],
+      strings: ['Aspiring Software Engineer' ],
       autoStart: true,
       loop: true,
     }}
@@ -38,13 +45,13 @@ const Home = () => {
   </div>
   
   
-  <div className='Home-image' style={{ marginTop: '-200px' }}>
-  <img src={ProfilePic} className="Profile-Pic" alt="Profile" /> 
-</div>
+
 
 
 
     </div>
+
+
 
   </div>
     

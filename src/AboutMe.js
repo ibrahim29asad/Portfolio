@@ -52,9 +52,12 @@ const AboutMe = () => {
 
 
         </div>
-      </div><div className='About-image' style={{ marginTop: '-37%' }}>
+
+      </div>
+      <div className='About-image' style={{ marginTop: '-45%' }}>
           <img src={Raptors} className="About-Pic" alt="Profile" />
-        </div><div className='About-Text'>
+        </div><
+          div className='About-Text'>
           <br /> <br />
           <br /> <br />
         </div></>
