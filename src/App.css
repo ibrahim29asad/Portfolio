@@ -109,6 +109,25 @@
   100% { transform: rotate( 0.0deg) }
 }
 
+.typewriter-text {
+  color: #0acdf0; /* Change 'blue' to the desired color */
+  text-shadow: 2px 2px  blue;
+}
+
+
+
+.Profile-Pic {
+  border-radius: 50%;
+  width: 300px; 
+  height: 300px; 
+  object-fit: cover; 
+  object-position: top left;
+
+  position: fixed;
+  right: 10%;
+  top: 25%
+
+}
 
 
 
