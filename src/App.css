@@ -259,7 +259,7 @@ font-size: 1.1vw;
 
 .Tools-Grid{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   width: 60%; /* Adjust the width value as needed */
   margin: 0 auto; /* Center the grid container if necessary */
   
@@ -270,12 +270,12 @@ font-size: 1.1vw;
   background-image: linear-gradient(43deg, #4158D0 43%, #C850C0 67%, #FFCC70 90%, #ffffff 99%);
   color: #ffffff;
   border-radius: 5%;
-  padding:10px;
+  padding-right: 5%;
   font-size: 1.1vw;
   bottom: 0;
   transition: 0.3s;
-  height: 60%;
-  width: 21%;
+  height: 90%;
+  width: 90%;
 }
 
 .Tool:hover {
@@ -285,7 +285,7 @@ font-size: 1.1vw;
   border-color: #ffffff;
   border-radius: 5px;
   font-size: 1.1vw;
-  height: 65%;
+  height: 93%;
 }
 
 
@@ -471,26 +471,4 @@ font-size: 1.1vw;
   }
 }
 
-
-
-.Tools-Grid{
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  width: 60%; /* Adjust the width value as needed */
-  margin: 0 auto; /* Center the grid container if necessary */
-}
-
-.Tool{  
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 43%, #C850C0 67%, #FFCC70 90%, #ffffff 99%);
-  color: #ffffff;
-  border-radius: 5%;
-  padding:10px;
-  font-size: 15px;
-
-  bottom: 0;
-  transition: 0.3s;
-  height: 60%;
-  width: 81%;
-}
 

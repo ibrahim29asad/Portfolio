@@ -47,11 +47,12 @@ const Header = () => {
     Posts
   </button>
    |
+   <a href="https://drive.google.com/file/d/1XDiC-SNRuDxsJ4Uvo_ySVK-NDUxMWS77/view?usp=sharing ">
  <button class="button" >    
   <IoMdPaper/>
     Resume
   </button>
-
+</a>
 
     </header>
     
