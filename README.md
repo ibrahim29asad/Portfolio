@@ -1,12 +1,31 @@
 # Getting Started with Create React App
 
 
-This is Current Personal Portfolio, The Third Version with a Massive OverHaul from the prior State, which can also be seen here by having a Vercel Account:
-
-[Previous Version](https://ibrahim-asad-website-9w7ulzjv6-ibrahim29asads-projects.vercel.app)
+This is Current Personal Portfolie.
 
 This New Version can be seen here Without a Vercel Account:
 [Current Version, V3](https://portfolio-ebon-xi-96.vercel.app) 
+
+or with the following link https://portfolio-ebon-xi-96.vercel.app
+
+
+The Third Version with a Massive OverHaul from the prior State, which can also be seen here by having a Vercel Account:
+
+[Previous Version, V1](https://ibrahim-asad-website-9w7ulzjv6-ibrahim29asads-projects.vercel.app)
+
+The Second Iteration can be seen here without a Vercel Account, This Second Version was Updadated Design in Construction, However a Re-Haul was later Decided
+[Previous Version, V2](https://ibrahim-asad-website.vercel.app) 
+
+
+The Repo For the Previous Two Versions is located here: \
+https://github.com/ibrahim29asad/website \
+or you can click this [link](https://github.com/ibrahim29asad/website) 
+
+
+The Repo For the Current Version is located here: \
+https://github.com/ibrahim29asad/Portfolio \
+or you can click this [link](https://github.com/ibrahim29asad/Portfolio) 
+
 
 ## Available Scripts
 
