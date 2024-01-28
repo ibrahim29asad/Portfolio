@@ -50,9 +50,6 @@ function App() {
   <div className='Posts-Text-header'>
     GitHub Contributions:
   </div>
-  <div className='Posts-Text'>
-    (Theres more but most of the Repos are Private 🙇‍♂️)
-  </div>
   <div className='GitHub'>
     <GitHubCalendar username="ibrahim29asad" />
 
