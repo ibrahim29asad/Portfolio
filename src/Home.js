@@ -29,13 +29,13 @@ const Home = () => {
         Ibrahim
         
       </LinearGradient>
-{/*       
-      '5th Year Student', 'Software Developer', */}
+
+
 
   <div className='typewriter-text'>
       <Typewriter
     options={{
-      strings: ['Aspiring Software Engineer' ],
+      strings: ['5th Year Student', 'Software Developer','Aspiring Software Engineer' ],
       autoStart: true,
       loop: true,
     }}
